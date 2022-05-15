@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <title>Random Wincest Generator</title>
+   <style>
+    
+    #output {
+          font-family: 'Public Sans';font-size: 18px;
+    }
+    
+    body {
+    font-family: 'Public Sans';font-size: 22px;
+}
+  </style>
+</head>
+<body style=background-color:#f2ccb0>
+
+  <h2>generate a random sam and dean pairing</h2>
+  <div>
+    <button>generate</button>
+  </div>
+  <div>
+   
+  
+
+  <div id="output"></div>
+
+  <script>
+   
+    var btn = document.querySelector("button");
+    var out = document.getElementById("output");
+    
+  
+    btn.addEventListener("click", getWord);
+   
+    function getWord(){
+     
+      
+      var theWord= [
+        'Sam Winchester (the original and best)',
+'Soulless Sam',
+'Kale Sam',
+'Yoga Sam',
+'Justin Smith Sam',
+'Sam Wesson',
+'Wishverse Sam (What is and What Should Never Be)',
+'Samifer',
+'Meg!Sam',
+'Gary!Sam',
+'Gadreel!Sam',
+'Leviathan Sam',
+'Stanford Sam',
+'Cowboy Sam',
+'Impala!Sam',
+'Dr Sexy Sam',
+'Post-hell hallucinating Sam',
+'Powers!Sam',
+'Boyking Sam',
+'Mystery Spot Sam',
+'Dad Sam',
+'Ghost Sam',
+'Vampire Sam',
+'AU Trust Fund Sam',
+      ];
+      
+      var theWord2= [
+        'Dean Winchester (the original and best)',
+'Felon Dean',
+'Dean Smith',
+'Wishverse Dean (What is and What Should Never Be)',
+'Endverse Dean',
+'Michael!Dean',
+'Mark of Cain Dean',
+'Demon Dean',
+'Leviathan Dean',
+'Vampire Dean',
+'amnesiac Dean',
+'dog Dean',
+'old man lost-his-years-at-poker Dean',
+'Purgatory Dean',
+'Yellow Fever Dean',
+'Cowboy Dean',
+'Ghost Dean',
+'AU Trust Fund Dean',
+      ];
+
+      
+      var wordNum = Math.floor(Math.random() * theWord.length);
+      var wordNum2 = Math.floor(Math.random() * theWord2.length);
+      
+     
+      output.textContent = theWord[wordNum] + " and " + theWord2[wordNum2];
+    }
+</script>
+</body>
+</html>
